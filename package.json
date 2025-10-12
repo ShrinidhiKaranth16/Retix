@@ -10,9 +10,11 @@
   "scripts": {
     "clean": "del /Q /S build\\*",
     "build": "npm run clean && tsc",
-    "pub": "git add . && git commit -m 'update' && npm version %1 --no-git-tag-version && npm run build && npm publish && git push origin main"
+    "pub": "cross-env VERSION=$npm_config_version git add . && git commit -m 'update' && npm version $VERSION --no-git-tag-version && npm run build && npm publish && git push origin main"
+
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "del-cli": "^7.0.0"
   }
 }
