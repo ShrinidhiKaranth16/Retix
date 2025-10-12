@@ -11,8 +11,7 @@
   "scripts": {
     "clean": "del /Q \"build\\*\"",
     "build": "npm run clean && tsc",
-    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish && git push"
-  },
+    "pub": "git add . && git commit -m 'update' && npm version patch --no-git-tag-version && npm run build && npm publish && git push origin master"  },
   "keywords": [],
   "author": "",
   "license": "ISC",

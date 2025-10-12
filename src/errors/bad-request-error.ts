@@ -11,6 +11,6 @@ class BadRequestError extends CustomError{
     }
 }
 
-export default BadRequestError;
+export { BadRequestError };
 
     
