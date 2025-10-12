@@ -1,6 +1,6 @@
 {
   "name": "@retix/common",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "type": "module",
   "main": "index.js",
@@ -11,7 +11,8 @@
   "scripts": {
     "clean": "del /Q \"build\\*\"",
     "build": "npm run clean && tsc",
-    "pub": "git add . && git commit -m 'update' && npm version patch --no-git-tag-version && npm run build && npm publish && git push origin master"  },
+    "pub": "git add . && git commit -m 'update' && npm version patch --no-git-tag-version && npm run build && npm publish && git push origin master"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
