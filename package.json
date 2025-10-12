@@ -8,10 +8,11 @@
     "build/**/*"
   ],
   "scripts": {
-    "clean": "rimraf build",
-    "build": "npm run clean && tsc"
+    "clean": "del build",
+    "build": "npm run clean && tsc",
+    "pub": " git add . && git commit -m 'update' && npm version patch && npm run build && npm publish && git push"
   },
   "devDependencies": {
-    "rimraf": "^5.0.0"
+    "del-cli": "^7.0.0"
   }
 }
