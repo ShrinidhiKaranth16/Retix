@@ -8,3 +8,8 @@ export * from "./middlewears/currentUser.js";
 export * from "./middlewears/error-handler.js";
 export * from "./middlewears/require-auth.js";
 export * from "./middlewears/validateRequest.js";
+export * from "./events/base-listener.js";
+export * from "./events/base-publisher.js";
+export * from "./events/subjects.js";
+export * from "./events/ticket-created-event.js";
+export * from "./events/ticket-updated-event.js";
