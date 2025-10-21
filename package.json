@@ -1,6 +1,6 @@
 {
   "name": "@retix/common",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "",
   "type": "module",
   "main": "./build/index.js",

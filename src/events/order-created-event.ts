@@ -7,6 +7,7 @@ export interface OrderCreatedEvent{
         id: string;
         expiresAt: string;
         version: number;
+        userId: string;
         ticket: {
             id: string;
             price: number;
